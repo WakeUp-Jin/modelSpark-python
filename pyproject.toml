@@ -6,7 +6,7 @@ authors = ["xjk <xjk@xjkdeMacBook-Pro.local>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.13"
+python = ">=3.8,<4.0"
 chromadb = "^0.5.23"
 flask = "^3.1.0"
 
