@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "modelspark-python"
+version = "0.1.0"
+description = ""
+authors = ["xjk <xjk@xjkdeMacBook-Pro.local>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+chromadb = "^0.5.23"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
