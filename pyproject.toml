@@ -6,11 +6,16 @@ authors = ["xjk <xjk@xjkdeMacBook-Pro.local>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.8,<4.0"
+python = "^3.13"
 chromadb = "^0.5.23"
-flask = "^2.3.3"
+flask = "^3.1.0"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "mirrors"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true

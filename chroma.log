@@ -150,3 +150,119 @@ asyncio.exceptions.CancelledError
 [36mDEBUG[0m:    [27-12-2024 15:29:42] Stopping component OpenTelemetryClient
 [32mINFO[0m:     [27-12-2024 15:29:42] Application shutdown complete.
 [32mINFO[0m:     [27-12-2024 15:29:42] Finished server process [[36m7137[0m]
+[33mWARNING[0m:  [28-12-2024 17:29:16] chroma_server_nofile is set to 65535, but this is less than current soft limit of 1048575. chroma_server_nofile will not be set.
+[32mINFO[0m:     [28-12-2024 17:29:18] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [28-12-2024 17:29:18] Starting component System
+[36mDEBUG[0m:    [28-12-2024 17:29:18] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [28-12-2024 17:29:18] Starting component SqliteDB
+[36mDEBUG[0m:    [28-12-2024 17:29:18] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [28-12-2024 17:29:18] Starting component Posthog
+[36mDEBUG[0m:    [28-12-2024 17:29:18] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [28-12-2024 17:29:18] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [28-12-2024 17:29:18] Starting component LocalExecutor
+[36mDEBUG[0m:    [28-12-2024 17:29:18] Starting component SegmentAPI
+[32mINFO[0m:     [28-12-2024 17:29:18] Started server process [[36m66479[0m]
+[32mINFO[0m:     [28-12-2024 17:29:18] Waiting for application startup.
+[32mINFO[0m:     [28-12-2024 17:29:18] Application startup complete.
+[32mINFO[0m:     [28-12-2024 17:29:18] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[36mDEBUG[0m:    [28-12-2024 17:29:18] Stopping component System
+[36mDEBUG[0m:    [28-12-2024 17:29:18] Stopping component SegmentAPI
+[36mDEBUG[0m:    [28-12-2024 17:29:18] Stopping component LocalExecutor
+[36mDEBUG[0m:    [28-12-2024 17:29:18] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [28-12-2024 17:29:18] Stopping component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [28-12-2024 17:29:18] Stopping component Posthog
+[36mDEBUG[0m:    [28-12-2024 17:29:18] Stopping component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [28-12-2024 17:29:18] Stopping component SqliteDB
+[36mDEBUG[0m:    [28-12-2024 17:29:18] Stopping component OpenTelemetryClient
+[31mERROR[0m:    [28-12-2024 17:29:18] Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/xjk/Library/Caches/pypoetry/virtualenvs/modelspark-python--7ehx82b-py3.13/lib/python3.13/site-packages/starlette/routing.py", line 700, in lifespan
+    await receive()
+  File "/Users/xjk/Library/Caches/pypoetry/virtualenvs/modelspark-python--7ehx82b-py3.13/lib/python3.13/site-packages/uvicorn/lifespan/on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/queues.py", line 186, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+[33mWARNING[0m:  [30-12-2024 13:53:04] chroma_server_nofile is set to 65535, but this is less than current soft limit of 1048575. chroma_server_nofile will not be set.
+[32mINFO[0m:     [30-12-2024 13:53:05] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [30-12-2024 13:53:05] Starting component System
+[36mDEBUG[0m:    [30-12-2024 13:53:05] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [30-12-2024 13:53:05] Starting component SqliteDB
+[36mDEBUG[0m:    [30-12-2024 13:53:05] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [30-12-2024 13:53:05] Starting component Posthog
+[36mDEBUG[0m:    [30-12-2024 13:53:05] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [30-12-2024 13:53:05] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [30-12-2024 13:53:05] Starting component LocalExecutor
+[36mDEBUG[0m:    [30-12-2024 13:53:05] Starting component SegmentAPI
+[32mINFO[0m:     [30-12-2024 13:53:05] Started server process [[36m31002[0m]
+[32mINFO[0m:     [30-12-2024 13:53:05] Waiting for application startup.
+[32mINFO[0m:     [30-12-2024 13:53:05] Application startup complete.
+[32mINFO[0m:     [30-12-2024 13:53:05] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[36mDEBUG[0m:    [30-12-2024 13:53:05] Stopping component System
+[36mDEBUG[0m:    [30-12-2024 13:53:05] Stopping component SegmentAPI
+[36mDEBUG[0m:    [30-12-2024 13:53:05] Stopping component LocalExecutor
+[36mDEBUG[0m:    [30-12-2024 13:53:05] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [30-12-2024 13:53:05] Stopping component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [30-12-2024 13:53:05] Stopping component Posthog
+[36mDEBUG[0m:    [30-12-2024 13:53:05] Stopping component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [30-12-2024 13:53:05] Stopping component SqliteDB
+[36mDEBUG[0m:    [30-12-2024 13:53:05] Stopping component OpenTelemetryClient
+[31mERROR[0m:    [30-12-2024 13:53:05] Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "uvloop/loop.pyx", line 1512, in uvloop.loop.Loop.run_until_complete
+  File "uvloop/loop.pyx", line 1505, in uvloop.loop.Loop.run_until_complete
+  File "uvloop/loop.pyx", line 1379, in uvloop.loop.Loop.run_forever
+  File "uvloop/loop.pyx", line 557, in uvloop.loop.Loop._run
+  File "uvloop/loop.pyx", line 476, in uvloop.loop.Loop._on_idle
+  File "uvloop/cbhandles.pyx", line 83, in uvloop.loop.Handle._run
+  File "uvloop/cbhandles.pyx", line 63, in uvloop.loop.Handle._run
+  File "/Users/xjk/Desktop/back-code-project/modelSpark-python/.venv/lib/python3.13/site-packages/uvicorn/server.py", line 69, in serve
+    with self.capture_signals():
+         ~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/contextlib.py", line 148, in __exit__
+    next(self.gen)
+    ~~~~^^^^^^^^^^
+  File "/Users/xjk/Desktop/back-code-project/modelSpark-python/.venv/lib/python3.13/site-packages/uvicorn/server.py", line 330, in capture_signals
+    signal.raise_signal(captured_signal)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/runners.py", line 157, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/xjk/Desktop/back-code-project/modelSpark-python/.venv/lib/python3.13/site-packages/starlette/routing.py", line 700, in lifespan
+    await receive()
+  File "/Users/xjk/Desktop/back-code-project/modelSpark-python/.venv/lib/python3.13/site-packages/uvicorn/lifespan/on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/queues.py", line 186, in get
+    await getter
+asyncio.exceptions.CancelledError
+
