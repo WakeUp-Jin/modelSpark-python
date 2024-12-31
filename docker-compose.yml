@@ -15,9 +15,11 @@ services:
 
   chroma:
     build: .
-    command: poetry run chroma run --path /app/dbStore
+    command: poetry run chroma run --path /app/dbStore --port 5001
     volumes:
       - ./dbStore:/app/dbStore
+    ports:
+      - "5001:5001" # 暴露端口
     expose:
       - "5001" # 如果需要暴露端口给其他服务，可以修改端口
   # app:
