@@ -36,6 +36,8 @@ COPY . /app
 RUN mkdir -p /app/dbStore
 
 # 暴露 Flask 默认端口
-EXPOSE 5000
+# EXPOSE 8000
+
+# EXPOSE 5000
 
 # 默认的命令会在 docker-compose 启动时由 docker-compose 管理
